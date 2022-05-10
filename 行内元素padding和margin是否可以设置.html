@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内元素padding和margin是否可以设置</title>
+    <style>
+        .container{
+            background-color: aqua;
+        }
+        .lineBlock{
+            margin: 20px 20px;
+            border: 1px solid #ff00ff;
+            padding: 20px 20px 20px 20px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!--margin上下设置没有效果左右设置有效果，padding上下左右设置都有效果但是高度不会撑起父元素的高度-->
+    <div class="container"><span class="lineBlock">行内元素1</span><span class="lineBlock">行内元素2</span></div>
+</body>
+</html>
